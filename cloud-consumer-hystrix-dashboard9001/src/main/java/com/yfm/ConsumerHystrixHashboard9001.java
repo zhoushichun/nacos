@@ -1,0 +1,15 @@
+package com.yfm;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+
+@SpringBootApplication
+@EnableHystrixDashboard
+public class ConsumerHystrixHashboard9001 {
+    public static void main(String[] args) {
+
+        SpringApplication.run(ConsumerHystrixHashboard9001.class,args);
+    }
+
+}
