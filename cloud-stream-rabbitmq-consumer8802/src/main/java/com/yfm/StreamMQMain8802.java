@@ -6,8 +6,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class StreamMQMain8802
-{
+public class StreamMQMain8802 {
     public static void main(String[] args)
     {
         SpringApplication.run(StreamMQMain8802.class,args);
