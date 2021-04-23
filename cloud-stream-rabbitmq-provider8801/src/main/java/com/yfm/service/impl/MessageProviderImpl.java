@@ -5,13 +5,11 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.MessageBuilder;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.UUID;
 
 @EnableBinding(Source.class) // 可以理解为是一个消息的发送管道的定义
-@Service
 public class MessageProviderImpl implements IMessageProvider {
 
     @Resource
