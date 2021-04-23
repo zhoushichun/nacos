@@ -1,14 +1,13 @@
 package com.yfm.controller;
 
-import com.yfm.service.impl.IMessageProvider;
+import com.yfm.service.IMessageProvider;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-
 @RestController
 public class SendMessageController {
-    @Resource
+    @Autowired
     private IMessageProvider messageProvider;
 
     @GetMapping(value = "/sendMessage")
