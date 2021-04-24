@@ -1,0 +1,23 @@
+server:
+  port: 9001
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置Nacos地址
+      config:
+        server-addr: localhost:8848 #配置中心地址
+        file-extension: yaml
+#        group: TEST_GROUP #按照不同的分组实现
+#        namespace: 10bdd2a5-adcf-40f5-95de-13738a027e9a #按照命名空间去寻找 查询的顺序为 先看命名空间 然后看分组 再看application.name-dev.yaml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
